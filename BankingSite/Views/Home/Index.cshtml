@@ -1,4 +1,5 @@
-﻿@model BankingSite.Models.InterestRates
+﻿
+@model BankingSite.Models.InterestRates
 
 @{
     ViewBag.Title = "Home Page";
@@ -8,7 +9,7 @@
     <h1>Low rate loan!</h1>
     <p class="lead" id="mainMessage">@ViewBag.Message</p>
     <p>Current loan rate: <span id="loanRate">@Model.LoanRate</span> %</p>
-    <p><a href="@Url.Action("Apply", "LoanApplication")" class="btn btn-primary btn-lg">Apply Now ! &raquo;</a></p>
+    <p><a href="@Url.Action("Apply", "LoanApplication")" class="btn btn-primary btn-lg">Apply Now ! Pay Later &raquo;</a></p>
 </div>
 
 <div class="row">
